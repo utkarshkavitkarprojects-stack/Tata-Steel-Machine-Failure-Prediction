@@ -37,6 +37,15 @@ Instead of reacting **after failure happens**, this system enables a **proactive
 
 ---
 
+## 🌐 Live Demo
+
+🚀 Try the deployed app here:  
+👉 https://machine-failure-prediction-app.streamlit.app/
+
+⚠️ Note: The app may take a few seconds to load initially due to inactivity (free hosting behavior).
+
+---
+
 # 🧠 Project Workflow
 
 This project was built as a **full machine learning pipeline**, not just a notebook experiment.
@@ -322,13 +331,46 @@ Tata-Steel-Machine-Failure-Prediction/
 │   ├── best_model.pkl
 │   ├── final_feature_columns.pkl
 │   └── config.json
+|
+├── assets/
+│   ├── app_homepage.png
+│   ├── bulk_prediction_dashboard.png
+│   ├── single_prediction.png
+│   └── single_prediction_results.png
+|
+├── data/raw
+│   └── Machine Failure.csv
 │
-├── model_graphs/
-│   ├── *.png
+├── models/
+│   ├── best_model.pkl
+│   ├── decision_tree_model.pkl
+│   ├── logistic_regression_model.pkl
+│   ├── random_forest_model.pkl
+│   └── xgboost_model.pkl
 │
 ├── notebooks/
-│   └── Tata_Steel_Machine_Failure_Prediction.ipynb
+│   ├── 01_eda.ipynb
+│   ├── 02_feature_engineering_preprocessing.ipynb
+│   ├── 03_train_models.ipynb
+│   ├── 04_business_insights.ipynb
+│   └── 05_main.ipynb
 │
+├── outputs/
+│   ├── model_graphs
+│     ├── Decision_Tree_confusion_matirx.png
+│     ├── Decision_Tree_roc_curve.png
+│     ├── Logistic_Regression_confusion_matirx.png
+│     ├── Logistic_Regression_roc_curve.png
+│     ├── Random_Forest_confusion_matirx.png
+│     ├── Random_Forest_roc_curve.png
+│     ├── Xgboost_confusion_matirx.png
+│     └── Xgboost_roc_curve.png
+│   ├── reports  
+│     ├── Decision_Tree_classification_report.txt
+│     ├── Logistic_Regression_classification_report.txt
+│     ├── Random_Forest_classification_report.txt
+│     ├── Xgboostclassification_report.txt
+|
 ├── src/
 │   ├── data_loader.py
 │   ├── feature_engineering.py
@@ -341,4 +383,5 @@ Tata-Steel-Machine-Failure-Prediction/
 ├── app.py
 ├── main.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
